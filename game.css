@@ -21,4 +21,32 @@
 
 .choice-text {
   padding: .5rem;
+  width: 100%;
 }
+
+.correct {
+  background-color: #28a745;
+}
+
+.incorrect {
+  background-color: #dc3545;
+}
+
+/* HUD */
+
+.displays {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hud {
+  padding-bottom: 1rem; 
+}
+
+.hud h1{
+  margin: 0 auto;
+}
+
+/* .hud-1 {
+  float: left;
+} */
