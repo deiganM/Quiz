@@ -11,32 +11,20 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-let questions = [
-  {
-    question: "Inside what HTML element do we put the JavaScript?",
-    choice1: "<script>",
-    choice2: "<javascript>",
-    choice3: "<css>",
-    choice4: "<HTML>",
-    answer: 1
-  },
-  {
-    question: "What prov. are we in?",
-    choice1: "BC",
-    choice2: "ON",
-    choice3: "AB",
-    choice4: "QC",
-    answer: 3
-  },
-  {
-    question: "What is the largest city in AB?",
-    choice1: "Lloydminster",
-    choice2: "Red Deer",
-    choice3: "Edmonton",
-    choice4: "Calgary",
-    answer: 4
-  },
-];
+let questions = [];
+
+// questions coming from questions.json
+fetch('questions.json').then(res => {
+  return res.json();
+}).then(loadedQuestions => {
+  console.log(loadedQuestions);
+  questions = loadedQuestions;
+  startGame();
+})
+  .catch(err => {
+    question.innerHTML = "Your charas must be unaligned! Something is amiss, please refresh the page.";
+    console.error(err);
+  });
 
 // Constants
 
@@ -112,4 +100,3 @@ incrementScore = num => {
   scoreText.innerText = score;
 };
 
-startGame();

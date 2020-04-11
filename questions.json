@@ -1,0 +1,26 @@
+[
+  {
+    "question": "Inside what HTML element do we put the JavaScript?",
+    "choice1": "<script>",
+    "choice2": "<javascript>",
+    "choice3": "<css>",
+    "choice4": "<HTML>",
+    "answer": 1
+  },
+  {
+    "question": "What prov. are we in?",
+    "choice1": "BC",
+    "choice2": "ON",
+    "choice3": "AB",
+    "choice4": "QC",
+    "answer": 3
+  },
+  {
+    "question": "What is the largest city in AB?",
+    "choice1": "Lloydminster",
+    "choice2": "Red Deer",
+    "choice3": "Edmonton",
+    "choice4": "Calgary",
+    "answer": 4
+  }
+]
