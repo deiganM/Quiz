@@ -99,9 +99,17 @@ Buttons
   transform: translateY(-1px);
   /* transition: transform 150ms; */
 }
-
+/* Maybe delete this */
 .btn[disabled]:hover {
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
+}
+
+/* End game Page */
+
+#end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
