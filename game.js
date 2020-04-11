@@ -31,7 +31,7 @@ fetch('questions.json').then(res => {
 // Constants
 
 const CORRECT_BONUS = 10;
-// Try questions.length
+
 const MAX_QUESTIONS = 3;
 
 // Functions
@@ -72,7 +72,7 @@ getNewQuestion = () => {
 
   acceptingAnswers = true;
 }
-
+// For targeting the class for answers to change color
 choices.forEach(choice => {
   choice.addEventListener('click', e => {
     if (!acceptingAnswers) return;
@@ -90,7 +90,7 @@ choices.forEach(choice => {
     }
 
     selectedChoice.parentElement.classList.add(classToApply);
-
+    // Gives the pause with the colored answer before changing
     setTimeout(() => {
       selectedChoice.parentElement.classList.remove(classToApply);
       getNewQuestion();
