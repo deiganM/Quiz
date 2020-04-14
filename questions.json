@@ -1,26 +1,42 @@
 [
   {
-    "question": "Inside what HTML element do we put the JavaScript?",
-    "choice1": "<script>",
-    "choice2": "<javascript>",
-    "choice3": "<css>",
-    "choice4": "<HTML>",
-    "answer": 1
-  },
-  {
-    "question": "What prov. are we in?",
-    "choice1": "BC",
-    "choice2": "ON",
-    "choice3": "AB",
-    "choice4": "QC",
+    "question": "Which is the best way to reach the Astral Plane?",
+    "choice1": "Meditation",
+    "choice2": "Lucid dreaming",
+    "choice3": "Astral projection",
+    "choice4": "A near death experience",
     "answer": 3
   },
   {
-    "question": "What is the largest city in AB?",
-    "choice1": "Lloydminster",
-    "choice2": "Red Deer",
-    "choice3": "Edmonton",
-    "choice4": "Calgary",
+    "question": "From which star system do the benevolent alien race known as the 'Nordics' live?",
+    "choice1": "Scorpius",
+    "choice2": "Pleiades",
+    "choice3": "Aquarius",
+    "choice4": "Pegasus",
+    "answer": 2
+  },
+  {
+    "question": "Which of the following is NOT a trait of a Star Child?",
+    "choice1": "They are empathetic and aware",
+    "choice2": "They are old souls",
+    "choice3": "They are wise beyond their years",
+    "choice4": "They have a strong Aura",
     "answer": 4
+  },
+  {
+    "question": "How to tell if your third-eye chakra is blocked?",
+    "choice1": "You become judgemental",
+    "choice2": "Feelings of emotional distress",
+    "choice3": "An increased fear of being judged by others",
+    "choice4": "Low self-esteem",
+    "answer": 1
+  },
+  {
+    "question": "What colour is a pure energy being?",
+    "choice1": "Indigo",
+    "choice2": "Magenta",
+    "choice3": "Mesa",
+    "choice4": "Fuchsia",
+    "answer": 1
   }
 ]
