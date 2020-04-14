@@ -1,3 +1,8 @@
+/*******************
+Choice Containers
+********************/
+
+
 .wrapper {
   width: 80vw;
   margin: auto;
@@ -16,7 +21,6 @@
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 #7D98A1;
   transform: translateY(-1px);
-  /* transition: transform 150ms; */
 }
 
 .choice-prefix {
@@ -30,6 +34,12 @@
   width: 100%;
 }
 
+
+/*******************
+Choice bar colors 
+********************/
+
+
 .correct {
   background-color: #9be2ac;
 }
@@ -38,7 +48,11 @@
   background-color: #e6747f;
 }
 
-/* HUD */
+
+/***********
+HUD 
+************/
+
 
 .displays {
   display: flex;
@@ -61,6 +75,12 @@
   text-align: center;
 }
 
+
+/***********
+Progress Bar 
+************/
+
+
 #progressBar {
   width: 9rem;
   height: 1.5rem;
@@ -74,7 +94,11 @@
   width: 0%;
 }
 
-/* loader */
+
+/*************
+Loading Icon
+**************/
+
 
 /* from https://www.w3schools.com/howto/howto_css_loader.asp - with modifications */
 #loader {

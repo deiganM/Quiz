@@ -1,8 +1,19 @@
+/********
+Fonts
+*********/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Maitree&family=Montserrat&family=Rufina&display=swap');
 
 /* font-family: 'Rufina', serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Maitree', serif; */
+
+
+/***********
+General 
+************/
+
 
 * {
   box-sizing: border-box;
@@ -46,9 +57,11 @@ p {
   font-family: 'Rufina', serif;
 }
 
-/********
+
+/***********
 Utilities 
-*********/
+************/
+
 
 .container {
 width: 100vw;
@@ -92,6 +105,7 @@ padding: 2rem;
 Buttons 
 *********/
 
+
 .btn {
   font-size: 1.4rem;
   padding: 1rem 0;
@@ -108,16 +122,19 @@ Buttons
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 #886F68;
   transform: translateY(-1px);
-  /* transition: transform 150ms; */
 }
-/* Maybe delete this */
+
 .btn[disabled]:hover {
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
 }
 
-/* End game Page */
+
+/***********
+End game page 
+************/
+
 
 #end {
   display: flex;

@@ -1,12 +1,12 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
-// const questionCounterText = document.getElementById("questionCounter");
 const pregressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
 const loader = document.getElementById("loader");
 const game = document.getElementById("game");
 
+// Creating variables to start the game
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -29,13 +29,12 @@ fetch('questions.json').then(res => {
   });
 
 // Constants
-
 const CORRECT_BONUS = 10;
 
 const MAX_QUESTIONS = 5;
 
 // Functions
-
+// To begin the game and change questions
 startGame = () => {
   // questionCounter set to -1 to show an empty progress bar at the start or the game
   questionCounter = -1;
@@ -47,8 +46,9 @@ startGame = () => {
 };
 
 getNewQuestion = () => {
-
+  // Checks to see if we are out of questions
   if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    // Saves most recent score in local storage
     localStorage.setItem('mostRecentScore', score);
     // Go to the end page
     return window.location.assign('./end.html');
@@ -58,11 +58,11 @@ getNewQuestion = () => {
   progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
   // Update the progress bar
   progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
-
+  // Randomizes questions
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
-
+  // Matches random question to number (This is why dataset is used)
   choices.forEach(choice => {
     const number = choice.dataset['number'];
     choice.innerText = currentQuestion['choice' + number];
@@ -98,7 +98,7 @@ choices.forEach(choice => {
 
   })
 })
-
+// Adds score
 incrementScore = num => {
   score += num;
   scoreText.innerText = score;
